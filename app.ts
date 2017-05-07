@@ -8,7 +8,7 @@ import * as ejs from 'ejs';
 import * as mongoose from 'mongoose';
 
 import routes from './routes/index';
-import users from './api/userapis';
+// import users from './api/userapis';
 
 const CONNECTION_STRING ='mongodb://lmatabire:LEESNHU2016@ds137090.mlab.com:37090/hosp_app'
 mongoose.connect(CONNECTION_STRING).then(()=>{
@@ -35,8 +35,9 @@ app.use('/ngApp', express.static(path.join(__dirname, 'ngApp')));
 app.use('/api', express.static(path.join(__dirname, 'api')));
 
 app.use('/', routes);
-app.use('/users', users);
-app.use('/api/users', users)
+// app.use('/users', users);
+// app.use('/api/users', users);
+// app.use('api/userapis', userapis);
 
 // redirect 404 to home for the sake of AngularJS client-side routes
 app.get('/*', function(req, res, next) {
