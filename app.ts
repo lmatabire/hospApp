@@ -8,7 +8,7 @@ import * as ejs from 'ejs';
 import * as mongoose from 'mongoose';
 
 import routes from './routes/index';
-import users from './api/users';
+import users from './api/userapis';
 
 const CONNECTION_STRING ='mongodb://lmatabire:LEESNHU2016@ds137090.mlab.com:37090/hosp_app'
 mongoose.connect(CONNECTION_STRING).then(()=>{

@@ -1,6 +1,6 @@
 import * as express from 'express';
 
-import User from '../models/user';
+import User from '../models/user-profile';
 
 let router = express.Router();
 
